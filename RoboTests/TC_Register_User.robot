@@ -15,11 +15,15 @@ Test
     Sleep    3s
 
 #Click at the sign-in option
-
+    Click Link    link:Sign in
+    Sleep    3s
 
 #Click at the 'register your account' link
+    Click Link    link:Register your account
+    Sleep     3s
 
 #Fill the data in
+
 
 #Click at the 'Register' button
 

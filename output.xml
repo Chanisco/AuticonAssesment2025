@@ -1,27 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-17T13:38:59.558879" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-17T13:58:33.555415" rpa="false" schemaversion="5">
 <suite id="s1" name="TC Register User" source="E:\CODE\AuticonAssesment2025\RoboTests\TC_Register_User.robot">
 <test id="s1-t1" name="Test" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-17T13:38:59.894064" level="INFO">Opening browser 'edge' to base url 'https://practicesoftwaretesting.com/#/'.</msg>
+<msg time="2025-02-17T13:58:33.906899" level="INFO">Opening browser 'edge' to base url 'https://practicesoftwaretesting.com/#/'.</msg>
 <arg>https://practicesoftwaretesting.com/#/</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-17T13:38:59.893882" elapsed="2.182819"/>
+<status status="PASS" start="2025-02-17T13:58:33.906718" elapsed="2.805899"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-17T13:39:02.076999" elapsed="0.023004"/>
+<status status="PASS" start="2025-02-17T13:58:36.713039" elapsed="0.024962"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-17T13:39:05.100629" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-17T13:58:39.738591" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-17T13:39:02.100310" elapsed="3.000415"/>
+<status status="PASS" start="2025-02-17T13:58:36.738279" elapsed="3.000407"/>
 </kw>
-<status status="PASS" start="2025-02-17T13:38:59.893107" elapsed="5.207845"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-02-17T13:58:39.739199" level="INFO">Clicking link 'link:Sign in'.</msg>
+<arg>link:Sign in</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T13:58:39.738916" elapsed="0.059468"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T13:58:42.799087" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T13:58:39.798701" elapsed="3.000515"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-02-17T13:58:42.799672" level="INFO">Clicking link 'link:Register your account'.</msg>
+<arg>link:Register your account</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T13:58:42.799483" elapsed="0.091525"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T13:58:45.891634" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T13:58:42.891273" elapsed="3.000468"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T13:58:45.892263" level="INFO">Typing text 'user1' into text field 'id=first_name'.</msg>
+<arg>id=first_name</arg>
+<arg>user1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T13:58:45.892028" elapsed="0.061893"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T13:58:48.954471" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T13:58:45.954182" elapsed="3.000401"/>
+</kw>
+<status status="PASS" start="2025-02-17T13:58:33.905967" elapsed="15.048998"/>
 </test>
-<status status="PASS" start="2025-02-17T13:38:59.559912" elapsed="5.541567"/>
+<status status="PASS" start="2025-02-17T13:58:33.556465" elapsed="15.399092"/>
 </suite>
 <statistics>
 <total>
