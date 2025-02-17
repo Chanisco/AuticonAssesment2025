@@ -1,160 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-17T14:19:38.620402" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-17T14:36:05.376474" rpa="false" schemaversion="5">
 <suite id="s1" name="TC Register User" source="E:\CODE\AuticonAssesment2025\RoboTests\TC_Register_User.robot">
-<test id="s1-t1" name="Test" line="11">
+<test id="s1-t1" name="Awake" line="11">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>Screenshots/</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-02-17T14:36:05.720968" elapsed="0.000189"/>
+</kw>
+<status status="PASS" start="2025-02-17T14:36:05.720297" elapsed="0.001015"/>
+</test>
+<test id="s1-t2" name="Assesment" line="13">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:38.967608" level="INFO">Opening browser 'edge' to base url 'https://practicesoftwaretesting.com/#/'.</msg>
+<msg time="2025-02-17T14:36:05.722017" level="INFO">Opening browser 'edge' to base url 'https://practicesoftwaretesting.com/#/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-17T14:19:38.967386" elapsed="1.772027"/>
+<status status="PASS" start="2025-02-17T14:36:05.721871" elapsed="1.783325"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-17T14:19:40.739751" elapsed="0.030715"/>
+<status status="PASS" start="2025-02-17T14:36:07.505538" elapsed="0.030723"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-17T14:19:41.771178" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-17T14:36:08.536783" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-17T14:19:40.770697" elapsed="1.000583"/>
+<status status="PASS" start="2025-02-17T14:36:07.536487" elapsed="1.000396"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:41.771770" level="INFO">Clicking link 'link:Sign in'.</msg>
+<msg time="2025-02-17T14:36:08.537392" level="INFO">Clicking link 'link:Sign in'.</msg>
 <arg>link:Sign in</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:41.771506" elapsed="0.056841"/>
+<status status="PASS" start="2025-02-17T14:36:08.537117" elapsed="0.061013"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-17T14:19:42.828934" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-17T14:36:09.598938" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-17T14:19:41.828591" elapsed="1.000430"/>
+<status status="PASS" start="2025-02-17T14:36:08.598353" elapsed="1.000678"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:42.829378" level="INFO">Clicking link 'link:Register your account'.</msg>
+<msg time="2025-02-17T14:36:09.599435" level="INFO">Clicking link 'link:Register your account'.</msg>
 <arg>link:Register your account</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:42.829235" elapsed="0.084258"/>
+<status status="PASS" start="2025-02-17T14:36:09.599270" elapsed="0.067964"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-17T14:19:43.914287" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-17T14:36:10.668200" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-17T14:19:42.913727" elapsed="1.000647"/>
+<status status="PASS" start="2025-02-17T14:36:09.667583" elapsed="1.000725"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:43.914800" level="INFO">Typing text 'user1' into text field 'id=first_name'.</msg>
+<msg time="2025-02-17T14:36:10.668697" level="INFO">Typing text 'user1' into text field 'id=first_name'.</msg>
 <arg>id=first_name</arg>
 <arg>user1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:43.914609" elapsed="0.092392"/>
+<status status="PASS" start="2025-02-17T14:36:10.668535" elapsed="0.063104"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.007410" level="INFO">Typing text 'user1last name' into text field 'id=last_name'.</msg>
+<msg time="2025-02-17T14:36:10.732043" level="INFO">Typing text 'user1last name' into text field 'id=last_name'.</msg>
 <arg>id=last_name</arg>
 <arg>user1last name</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.007225" elapsed="0.097060"/>
+<status status="PASS" start="2025-02-17T14:36:10.731866" elapsed="0.068128"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.104817" level="INFO">Typing text '10/10/1990' into text field 'id=dob'.</msg>
+<msg time="2025-02-17T14:36:10.800702" level="INFO">Typing text '10/10/1990' into text field 'id=dob'.</msg>
 <arg>id=dob</arg>
 <arg>10/10/1990</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.104657" elapsed="0.049847"/>
+<status status="PASS" start="2025-02-17T14:36:10.800480" elapsed="0.064111"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.154881" level="INFO">Typing text 'Kobaltweg 11' into text field 'id=street'.</msg>
+<msg time="2025-02-17T14:36:10.865269" level="INFO">Typing text 'Kobaltweg 11' into text field 'id=street'.</msg>
 <arg>id=street</arg>
 <arg>Kobaltweg 11</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.154731" elapsed="0.083399"/>
+<status status="PASS" start="2025-02-17T14:36:10.865025" elapsed="0.066305"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.238586" level="INFO">Typing text '3542CE' into text field 'id=postal_code'.</msg>
+<msg time="2025-02-17T14:36:10.931844" level="INFO">Typing text '3542CE' into text field 'id=postal_code'.</msg>
 <arg>id=postal_code</arg>
 <arg>3542CE</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.238398" elapsed="0.053038"/>
+<status status="PASS" start="2025-02-17T14:36:10.931619" elapsed="0.089915"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.291850" level="INFO">Typing text 'Utrecht' into text field 'id=city'.</msg>
+<msg time="2025-02-17T14:36:11.022033" level="INFO">Typing text 'Utrecht' into text field 'id=city'.</msg>
 <arg>id=city</arg>
 <arg>Utrecht</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.291686" elapsed="0.056964"/>
+<status status="PASS" start="2025-02-17T14:36:11.021820" elapsed="0.075100"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.349023" level="INFO">Typing text 'Utrecht' into text field 'id=state'.</msg>
+<msg time="2025-02-17T14:36:11.097374" level="INFO">Typing text 'Utrecht' into text field 'id=state'.</msg>
 <arg>id=state</arg>
 <arg>Utrecht</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.348866" elapsed="0.077692"/>
+<status status="PASS" start="2025-02-17T14:36:11.097187" elapsed="0.059048"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.427001" level="INFO">Selecting options from selection list 'id=country' by label Netherlands (the).</msg>
+<msg time="2025-02-17T14:36:11.156642" level="INFO">Selecting options from selection list 'id=country' by label Netherlands (the).</msg>
 <arg>id=country</arg>
 <arg>Netherlands (the)</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.426815" elapsed="0.049610"/>
+<status status="PASS" start="2025-02-17T14:36:11.156477" elapsed="0.054199"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.476831" level="INFO">Typing text '0612345678' into text field 'id=phone'.</msg>
+<msg time="2025-02-17T14:36:11.211848" level="INFO">Typing text '0612345678' into text field 'id=phone'.</msg>
 <arg>id=phone</arg>
 <arg>0612345678</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.476670" elapsed="0.055768"/>
+<status status="PASS" start="2025-02-17T14:36:11.211631" elapsed="0.071546"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.532820" level="INFO">Typing text 'demoa@specialisterren.nl' into text field 'id=email'.</msg>
+<msg time="2025-02-17T14:36:11.283991" level="INFO">Typing text 'demoa@specialisterren.nl' into text field 'id=email'.</msg>
 <arg>id=email</arg>
 <arg>demoa@specialisterren.nl</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.532666" elapsed="0.069109"/>
+<status status="PASS" start="2025-02-17T14:36:11.283724" elapsed="0.065781"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:44.602281" level="INFO">Typing text '12345678!aB' into text field 'id=password'.</msg>
+<msg time="2025-02-17T14:36:11.349982" level="INFO">Typing text '12345678!aB' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>12345678!aB</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.602106" elapsed="0.069182"/>
+<status status="PASS" start="2025-02-17T14:36:11.349825" elapsed="0.065840"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-17T14:19:47.672255" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-17T14:36:14.416450" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-17T14:19:44.671607" elapsed="3.000747"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-17T14:19:47.672618" elapsed="2.167904"/>
+<status status="PASS" start="2025-02-17T14:36:11.415887" elapsed="3.000656"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-17T14:19:49.840964" level="INFO">Clicking element 'button=Register'.</msg>
-<msg time="2025-02-17T14:19:49.841017" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-02-17T14:19:49.841103" level="FAIL">No browser is open.</msg>
+<msg time="2025-02-17T14:36:14.416978" level="INFO">Clicking element 'button=Register'.</msg>
+<msg time="2025-02-17T14:36:14.571003" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-2.png"&gt;&lt;img src="Screenshots/selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-17T14:36:14.571129" level="FAIL">Element with locator 'button=Register' not found.</msg>
 <arg>button=Register</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-02-17T14:19:49.840786" elapsed="0.002287">No browser is open.</status>
+<status status="FAIL" start="2025-02-17T14:36:14.416799" elapsed="0.156210">Element with locator 'button=Register' not found.</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-17T14:19:49.843218" elapsed="0.000023"/>
+<status status="NOT RUN" start="2025-02-17T14:36:14.573268" elapsed="0.000036"/>
 </kw>
-<status status="FAIL" start="2025-02-17T14:19:38.966703" elapsed="10.876700">No browser is open.</status>
+<status status="FAIL" start="2025-02-17T14:36:05.721630" elapsed="8.851896">Element with locator 'button=Register' not found.</status>
 </test>
-<status status="FAIL" start="2025-02-17T14:19:38.621394" elapsed="11.222578"/>
+<status status="FAIL" start="2025-02-17T14:36:05.377531" elapsed="9.196757"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TC Register User" id="s1" pass="0" fail="1" skip="0">TC Register User</stat>
+<stat name="TC Register User" id="s1" pass="1" fail="1" skip="0">TC Register User</stat>
 </suite>
 </statistics>
 <errors>

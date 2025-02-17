@@ -3,12 +3,14 @@ Library     SeleniumLibrary
 
 
 *** Variables ***
-${screenshot_directory}    ${CURDIR}/Screenshots
 ${browser}    edge
 ${url}    https://practicesoftwaretesting.com/#/
 
+
 *** Test Cases ***
-Test
+Awake
+    Set Screenshot Directory     Screenshots/
+Assesment
 #Open the tool shop demo website
     Open Browser    ${url}     ${browser}    
     Maximize Browser Window
@@ -35,7 +37,6 @@ Test
     Input Text    id=email    demoa@specialisterren.nl
     Input Text    id=password    12345678!aB
     Sleep     3s
-    Close Browser
 
 #Click at the 'Register' button
     Click Element    button=Register
