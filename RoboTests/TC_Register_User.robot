@@ -78,7 +78,7 @@ InsertCorrectPassword
 #Click at the login button
 ClickLoginButton
     Click element   xpath://input[@type="submit"]
-    Sleep     20s
+    Sleep     5s
 
     #old password for testing 1267t3861237867812
 
