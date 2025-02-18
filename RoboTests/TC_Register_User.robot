@@ -2,23 +2,10 @@
 Library     SeleniumLibrary
 Library    Screenshot
 
+Resource   ../Resources/LoginResources.robot
 
 *** Variables ***
-${browser}    edge
-${url}    https://practicesoftwaretesting.com/#/
-${screenshot_dir}    Screenshots/
 
-
-${first_name}    user1
-${last_name}    user1last name
-${dob}    10/10/1990
-${street}    Kobaltweg 11
-${postal_code}    3542CE
-${city}    Utrecht
-${country}    Netherlands (the)
-${phone}    0612345678
-${email}    s@specialisterren.nl
-${password}    12345678!aB1267t3861237867812
 
 
 *** Test Cases ***
@@ -53,14 +40,13 @@ FillRegistrationData
     Input Text    id=state         ${city}
     Select From List By Label    id=country    ${country}
     Input Text    id=phone         ${phone}
-    Input Text    id=email         ${email}
-    Input Text    id=password      ${password}
+    Input Text    id=email         ${registration_email}
+    Input Text    id=password      ${registration_password}
     #CreateScreenshot
     Sleep     1s
 
 #Click at the 'Register' button
 ClickRegisterButton
-    #Click element    xpath://html/body/app-root[1]/div[1]/app-register[1]/div[1]/div[1]/div[1]/form[1]/div[1]/button[1]
     Click element   xpath://button[@type="submit"]
     Sleep     1s
     
@@ -80,7 +66,6 @@ ClickLoginButton
     Click element   xpath://input[@type="submit"]
     Sleep     5s
 
-    #old password for testing 1267t3861237867812
 
 *** Keywords ***
 CreateScreenshot

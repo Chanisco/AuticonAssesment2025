@@ -7,7 +7,6 @@ ${browser}    edge
 ${url}    https://practicesoftwaretesting.com/#/
 ${screenshot_dir}    Screenshots/
 
-
 ${first_name}    user1
 ${last_name}    user1last name
 ${dob}    10/10/1990
@@ -16,6 +15,10 @@ ${postal_code}    3542CE
 ${city}    Utrecht
 ${country}    Netherlands (the)
 ${phone}    0612345678
+${registration_email}     demoa@specialisterren.nl
+${registration_password}     12345678!aBhjkadshjdaskhasdjkhasdjk
+
+
 #--------- Login Credentials only for testing purposes
 ${email}    customer@practicesoftwaretesting.com
 ${password}    welcome01
