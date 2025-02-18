@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-
+Library    Screenshot
 
 *** Variables ***
 ${browser}    edge
@@ -16,5 +16,17 @@ ${postal_code}    3542CE
 ${city}    Utrecht
 ${country}    Netherlands (the)
 ${phone}    0612345678
-${email}    demoa@specialisterren.nl
-${password}    12345678!aB
+#--------- Login Credentials only for testing purposes
+${email}    customer@practicesoftwaretesting.com
+${password}    welcome01
+
+*** Keywords ***
+Awake
+    SeleniumLibrary.Set Screenshot Directory     ${screenshot_dir}
+    Screenshot.Set Screenshot Directory     ${screenshot_dir}
+
+#Open the tool shop demo login page
+OpenWebsite
+    Open Browser    ${url}     ${browser}    
+    Maximize Browser Window
+    Sleep    1s
