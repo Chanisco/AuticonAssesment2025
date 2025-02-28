@@ -37,6 +37,11 @@ The second half of the assesment we had to complete a purchase. There were some 
 ### Below you can see the login procedure
 ![TC Order Tool_GIF]
 
+## Below errors were found during tests
+![Error_DataLeak]
+
+![Error_ErrorInvalidCharacters]
+
 [RobotFramework]: https://img.shields.io/badge/Robot%20Framework-000000?style=for-the-badge&logo=RobotFramework
 [Robot-url]: https://robotframework.org
 [Python]: https://img.shields.io/badge/Python-FFDD4F?style=for-the-badge&logo=Python
@@ -47,3 +52,6 @@ The second half of the assesment we had to complete a purchase. There were some 
 
 [TC Order Tool_GIF]: README_IMAGES/TC_Order_Tool_Animation.gif
 [TC Register_User_GIF]: README_IMAGES/TC_Register_UserAnimation.gif
+
+[Error_DataLeak]: Screenshots/Errors/ErrorDataLeak.png
+[Error_ErrorInvalidCharacters]: Screenshots/Errors/ErrorInvalidCharacters.png
