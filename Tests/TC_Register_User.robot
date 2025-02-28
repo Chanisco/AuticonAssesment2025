@@ -1,33 +1,25 @@
 *** Settings ***
 Library     SeleniumLibrary
-Library    Screenshot
-
 Resource   ../Resources/LoginResources.robot
 
-*** Variables ***
-
-
-
 *** Test Cases ***
-Awake
+Configure Screenshots to save in Screenshots folder
     SeleniumLibrary.Set Screenshot Directory     ${screenshot_dir}
     Screenshot.Set Screenshot Directory     ${screenshot_dir}
 
-OpenWebsite
+Open Website
 #Open the tool shop demo website
     Open Browser    ${url}     ${browser}    
     Maximize Browser Window
-    Sleep    1s
 
 #Click at the sign-in option
 ClickSignIn
     Click Link    link:Sign in
-    Sleep    1s
 
 #Click at the 'register your account' link
 ClickRegister
+    Wait Until Element Is Visible   link:Register your account
     Click Link    link:Register your account
-    Sleep     1s
 
 #Fill the data in
 FillRegistrationData
@@ -42,13 +34,14 @@ FillRegistrationData
     Input Text    id=phone         ${phone}
     Input Text    id=email         ${registration_email}
     Input Text    id=password      ${registration_password}
+     Sleep    1s
     #CreateScreenshot
-    Sleep     1s
 
 #Click at the 'Register' button
 ClickRegisterButton
-    Click element   xpath://button[@type="submit"]
-    Sleep     1s
+    Wait Until Element Is Visible   xpath://button[@type="submit"][contains(text(),"Register")]
+    Click element   xpath://button[@type="submit"][contains(text(),"Register")]
+    Sleep    1s
     
 
 #Enter the correct email for the newly created user
@@ -59,15 +52,7 @@ InsertCorrectUsername
 #Enter the correct password for the newly created user
 InsertCorrectPassword
     Input Text    id=password    ${password}
-    Sleep     1s
 
 #Click at the login button
 ClickLoginButton
     Click element   xpath://input[@type="submit"]
-    Sleep     5s
-
-
-*** Keywords ***
-CreateScreenshot
-    Execute JavaScript    window.scrollTo(0, 1000)
-    Capture Page Screenshot     screenshot.png
