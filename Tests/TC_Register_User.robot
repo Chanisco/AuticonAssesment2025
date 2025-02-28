@@ -23,6 +23,7 @@ ClickRegister
 
 #Fill the data in
 FillRegistrationData
+    Wait Until Element Is Visible   id=first_name
     Input Text    id=first_name    ${first_name}
     Input Text    id=last_name     ${last_name} 
     Input Text    id=dob           ${dob}
