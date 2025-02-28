@@ -23,7 +23,7 @@ Order Tool
     Input Text    id=search-query    Pliers
     Click element   xpath://button[@type="submit"]
     Wait Until Page Contains    Slip Joint Pliers
-    Click Image Of Product    Slip Joint Pliers
+    Click Product Image    Slip Joint Pliers
     Wait Until Page Contains    Add to cart
     Click Button    id=btn-add-to-cart
     Wait Until Element Is Visible    xpath=//a[@href="/checkout"]
@@ -38,16 +38,12 @@ Order Tool
     Select From List By Label    id=payment-method    Buy Now Pay Later
     Wait Until Element Is Visible    id=monthly_installments
     Select From List By Label    id=monthly_installments    3 Monthly Installments
-    Click Button    xpath=//button[@type='button'][contains(text(),'Confirm')][@data-test="finish"]
-    Click Link    link:Sign in
-    Wait Until Page Contains    Login
-    Input Text    id=email    ${email}
-    Input Text    id=password    ${password}
-    Click element   xpath://input[@type="submit"]
-    Wait Until Page Contains    My account
-
+    Click Button    xpath=//button[@type='button'][contains(text(),'Confirm')]
+    Wait Until Element Is Enabled    xpath=//div[@class='help-block'][contains(text(),'Payment was successful')]
+    Click Button    xpath=//button[@type='button'][contains(text(),'Confirm')]
+    Wait Until Page Contains    Thanks for your order
 
 *** Keywords ***
-Click Image Of Product
+Click Product Image
     [Arguments]    ${ImageAlt}
     Click Element    xpath=//img[@alt="${ImageAlt}"]/ancestor::a

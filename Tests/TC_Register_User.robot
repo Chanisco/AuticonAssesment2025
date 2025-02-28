@@ -27,4 +27,3 @@ Register account and login
     Input Text    id=email    ${email}
     Input Text    id=password    ${password}
     Click element   xpath://input[@type="submit"]
-    Sleep    1s
