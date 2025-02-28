@@ -1,7 +1,5 @@
 *** Settings ***
 Library     SeleniumLibrary
-Library    Screenshot
-
 Resource   ../Resources/LoginResources.robot
 
 Suite Setup    Awake
@@ -40,8 +38,8 @@ Put Tool In Cart
     ClickImageLink    Slip Joint Pliers
     Wait Until Page Contains    Add to cart
     Click Button    id=btn-add-to-cart
-    Wait Until Element Is Visible    xpath=//body/app-root[@ng-version='17.1.1']/app-header/nav[@class='navbar navbar-expand-lg navbar-light bg-light']/div[@class='container']/div[@id='navbarSupportedContent']/ul[@class='navbar-nav ms-auto mb-2 mb-lg-0']/li[5]/a[1]
-    Click Element    xpath=//body/app-root[@ng-version='17.1.1']/app-header/nav[@class='navbar navbar-expand-lg navbar-light bg-light']/div[@class='container']/div[@id='navbarSupportedContent']/ul[@class='navbar-nav ms-auto mb-2 mb-lg-0']/li[5]/a[1]
+    Wait Until Element Is Visible    xpath=//a[@href="/checkout"]
+    Click Element    xpath=//a[@href="/checkout"]
 
 #Click at 'Proceed to checkout'
 ProceedInCart-StepOne Cart
