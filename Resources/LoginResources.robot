@@ -23,13 +23,12 @@ ${registration_password}     12345678!aBhjkadshjdaskhasdjkhasdjk
 ${email}    customer@practicesoftwaretesting.com
 ${password}    welcome01
 
+#--------- Purchase details
+${product}    Slip Joint Pliers
+${payment_method}    Buy Now Pay Later
+${monthly_installments}    3 Monthly Installments
+
 *** Keywords ***
-Awake
+Set Screenshot Directory to Screenshotsfolder   [Documentation]    This keyword sets the directory for the screenshots into the Screenshots folder for better structure
     SeleniumLibrary.Set Screenshot Directory     ${screenshot_dir}
     Screenshot.Set Screenshot Directory     ${screenshot_dir}
-
-#Open the tool shop demo login page
-OpenWebsite
-    Open Browser    ${url}     ${browser}    
-    Maximize Browser Window
-    Sleep    1s
