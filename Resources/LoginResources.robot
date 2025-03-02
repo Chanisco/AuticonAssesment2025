@@ -18,7 +18,6 @@ ${phone}    0612345678
 ${registration_email}     demoa@specialisterren.nl
 ${registration_password}     12345678!aBhjkadshjdaskhasdjkhasdjk
 
-
 #--------- Login Credentials only for testing purposes
 ${email}    customer@practicesoftwaretesting.com
 ${password}    welcome01
@@ -29,6 +28,7 @@ ${payment_method}    Buy Now Pay Later
 ${monthly_installments}    3 Monthly Installments
 
 *** Keywords ***
-Set Screenshot Directory to Screenshotsfolder   [Documentation]    This keyword sets the directory for the screenshots into the Screenshots folder for better structure
+Set Screenshot Directory to Screenshotsfolder
+    [Documentation]    This keyword sets the directory for the screenshots into the Screenshots folder for better structure.
     SeleniumLibrary.Set Screenshot Directory     ${screenshot_dir}
     Screenshot.Set Screenshot Directory     ${screenshot_dir}

@@ -2,12 +2,8 @@
 Library     SeleniumLibrary
 Resource   ../Resources/LoginResources.robot
 
-*** Variables ***
-${browser}    edge
-${url}    https://practicesoftwaretesting.com/#/
-
 *** Test Cases ***
-Order Tool
+TC_Order_Tool Process     [Documentation]    This test case goes through the process Login in, Searching for a product, Adding it to the cart, and completing the purchase
     Open Browser    ${url}     ${browser}    
     Maximize Browser Window
     Click Link    link:Sign in
@@ -42,6 +38,7 @@ Order Tool
     Wait Until Page Contains    Thanks for your order
 
 *** Keywords ***
-Click Product Image    [Documentation]    This Keywords Clicks on the product image based on the alt text to add the product to the cart
-    [Arguments]    ${ImageAlt}    
+Click Product Image
+    [Documentation]    This keyword clicks on the product image based on the alt text to add the product to the cart.
+    [Arguments]    ${ImageAlt}
     Click Element    xpath=//img[@alt="${ImageAlt}"]/ancestor::a

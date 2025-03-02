@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 Resource   ../Resources/LoginResources.robot
 
 *** Test Cases ***
-Register account and login
+Register account and login    [Documentation]    This test case goes through the process of registering a new account and logging in    
     Open Browser    ${url}     ${browser}    
     Maximize Browser Window
     Click Link    link:Sign in
